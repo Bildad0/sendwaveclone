@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Send Wave Website Clone</title>
   </head>
@@ -26,7 +27,7 @@
         </div>
 
         <!-- nav menus -->
-        <div class="place-content-between">
+        <div class="place-content-between hidden sm:hidden md:flex lg:flex xl:flex">
           <ul class="flex flex-row gap-5 p-2 text-blue-400 ">
             <li>Who we are <span class=""></span></li>
             <li>How it works <span class=""></span></li>
@@ -34,19 +35,23 @@
             <li>Get Help</li>
           </ul>
         </div>
-      <div class=" gap-5 pr-3">
+      <div class=" gap-5 pr-3 hidden sm:hidden md:flex lg:flex xl:flex">
         <button class="rounded-3xl border-2 border-sky-800 p-2 ">Flag EN</button>
         <button class="rounded-3xl border-2 border-blue-500 bg-blue-500 p-2 text-white">Download App</button>
       </div>
+      <!-- mobile toggler -->
+      <div class="flex sm:flex md:hidden lg:hidden xl:hidden p-4">Icon Togler</div>
       </nav>
     </header>
 
     <!-- main body -->
-    <div class="bg-yellow-300 min-w-fit p-10">
-      <div class="flex">
+    
+    <div class="bg-yellow-300 min-w-fit p-10 curve-border  ">
+      <!-- first part of the body -->
+      <div class="grid grid-rows-1 sm:grid-rows-1 md:grid-rows-2 lg:grid-rows-2 xl:grid-rows-2">
 
         <!-- first section -->
-        <div class="text-start flex-auto pl-3">
+        <div class="text-center sm:text-center md:text-start lg:text-start xl:text-start pl-3">
           <h1 class="font-bold pb-4 text-6xl decoration-8 text-blue-900 white-space-4">
             Send Money <br />with love
           </h1>
@@ -61,8 +66,8 @@
           </div>
 
           <!-- mobile screens -->
-          <div class="grid-row-2 p-5 grid sm:grid md:hidden lg:hidden">
-            <button>
+          <div class="grid p-2 sm:p-2 md:p-5 lg:p-5 xl:p-5 grid-rows-2  sm:grid md:hidden lg:hidden">
+            <button class="">
               <a href=""
                 ><img
                   loading="lazy"
@@ -71,7 +76,7 @@
                 />
               </a>
             </button>
-            <button>
+            <button class="mt-4">
               <a href=""
                 ><img
                   loading="lazy"
@@ -99,7 +104,7 @@
               </div>
             </div>
             <!-- 2 -->
-            <div class="p-4">
+            <div class="p-4 hidden sm:hidden md:flex lg:flex xl:flex">
               <h1>
               Scan this QR code with your
                <br />phone to download our app!
@@ -110,7 +115,7 @@
         </div>
 
         <!-- second section -->
-        <div class="text-center flex-auto w-32  m-4 mt-8">
+        <div class="text-center    m-4 mt-8">
           <div class="card bg-white   rounded-md drop-shadow-xl">
             <div class="bg-blue-900 rounded-t-md"><h1 class="text-white font-bold text-2xl p-4">Exchange Rate</h1clas></div>
               <div class="p-3 pt-10">
@@ -139,6 +144,28 @@
                 </div>
               </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- second part of body -->
+    <div class="p-8 place-content">
+      <div class="flex flex-row place-content-center gap-3 md:flex-row lg:flex-row sm:flex-col">
+        <div>
+          <img 
+          height="240px"
+          width="300px"
+          src="https://assets-global.website-files.com/634a9930c5b24337cbbac93b/634a9930c5b2438ac6bacb2a_Website_Phone_1376x2688-01%20(1).png"
+          alt="phone app"
+          />
+        </div>
+        <div class="p-4">
+          <ul class="">
+            <li class="">Easy to sign up</li>
+            <li>24/7 support</li>
+            <li>First and convinient </li>
+            <li>Trusted and legitimate</li>
+          </ul>
         </div>
       </div>
     </div>

@@ -1,0 +1,12 @@
+.curve-border {
+  position: "relative";
+}
+
+.curve-border:after {
+  width: 100%;
+  height: fit-content;
+  background: #fff;
+  top: 0;
+  position: absolute;
+  border-radius: 1% -30% 150% 100%;
+}
