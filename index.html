@@ -115,7 +115,7 @@
         </div>
 
         <!-- second section -->
-        <div class="text-center w-fit  mt-8">
+        <div class="text-center w-fit   container mx-auto   mt-8">
           <div class="card bg-white   rounded-md drop-shadow-xl">
             <div class="bg-blue-900 rounded-t-md"><h1 class="text-white font-bold text-2xl p-4">Exchange Rate</h1clas></div>
               <div class="p-3 ">
@@ -176,7 +176,7 @@
     </div>
 
     <!-- second part of main body -->
-    <div class="p-8 place-content container mx-auto">
+    <div class="p-8 place-content">
       <div class="flex flex-col place-content-center gap-3 md:flex-row lg:flex-row sm:flex-col">
         <div>
           <img 
@@ -186,25 +186,25 @@
           alt="phone app"
           />
         </div>
-        <div class="p-4 w-fit sm:w-fit md:w-80 lg:w-80">
+        <div class="p-4 w-80">
           <ul class="flex flex-col gap-6">
             <li class="">
               <h1 class="text-blue-900 font-bold"><span class="p-1">Icon</span> Easy to sign up</h1>
-              <p class="pl-8">Link your debit card, verify your identity and be sending in minutes.</p>
+              <p class="pl-8 border-l-4 border-dotted m-2 ">Link your debit card, verify your identity and be sending in minutes.</p>
             </li>
             <li>
               <h1 class="text-blue-900 font-bold"><span class="p-1">Icon</span> 24/7 support</h1>
-               <p class="pl-8">Our phone lines are open 24/7 in multiple languages should you need it</p>
+               <p class="pl-8 border-l-4 border-dotted  m-2">Our phone lines are open 24/7 in multiple languages should you need it</p>
               </li>
             <li>
               <h1 class="text-blue-900 font-bold">
                 <span class="p-1">Icon</span>Fast & convenient transfers
               </h1>
-              <p class="pl-8">Skip the line and send money from your phone to your loved ones in seconds.</p>
+              <p class="pl-8 border-l-4 border-dotted  m-2">Skip the line and send money from your phone to your loved ones in seconds.</p>
              </li>
             <li>
               <h1 class="text-blue-900 font-bold" ><span clas="p-1">Icon</span> Trusted and legitimate</h1>
-              <p class="pl-8">Trusted by over 1 million users, Sendwave is operated by Chime Inc. and is authorized to transmit money in the US, Canada, the UK and the EU.</p>
+              <p class="pl-8 border-l-4 border-dotted border-black-300  m-2">Trusted by over 1 million users, Sendwave is operated by Chime Inc. and is authorized to transmit money in the US, Canada, the UK and the EU.</p>
             </li>
           </ul>
         </div>
@@ -215,8 +215,8 @@
     <div class="bg-cover p-4 bg-center" style="background-image:url('https://assets-global.website-files.com/634a9930c5b24337cbbac93b/63c531c38cd075082c245804_shape-skew-home.svg')">
       <h1 class="text-center  text-blue-900 font-bold text-4xl ">See what our customers<br /> say about sendwave</h1>
       
-      <div class="flex flex-row gap-4 snap-mandatory snap-x container mx-auto px-4 ">
-        <div class="card bg-white rounded-xl shadow-lg p-4">First card</div>
+      <!-- <div class="flex flex-row gap-4 snap-mandatory snap-x container mx-auto ">
+       
         <div class="p-4 rounded-xl shadow-lg card bg-white">Second Card</div>
         <div class="card bg-white rounded-xl shadow-lg p-4">First card</div>
         <div class="p-4 rounded-xl shadow-lg card bg-white">Second Card</div>
@@ -226,7 +226,53 @@
         <div class="p-4 rounded-xl shadow-lg card bg-white">Second Card</div>
         <div class="card bg-white rounded-xl shadow-lg p-4">First card</div>
         <div class="p-4 rounded-xl shadow-lg card bg-white">Second Card</div>
+      </div> -->
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="duration-200 ease-in-out" data-carousel-item>
+        <div class="card bg-white rounded-xl shadow-lg p-4 absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">First card</div>
+
       </div>
+      <!-- Item 2 -->
+      <div class=" hidden duration-300 ease-in-out" data-carousel-item>
+        <div class="card bg-white absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl shadow-lg p-4">Second card</div>
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-400 ease-in-out" data-carousel-item>
+        <div class="card bg-white absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl shadow-lg p-4">Third card</div>      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-500 ease-in-out" data-carousel-item>
+        <div class="card bg-white absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl shadow-lg p-4">Fourth card</div>      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-600 ease-in-out" data-carousel-item>
+        <div class="card bg-white absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl shadow-lg p-4">Fifth card</div>      </div>
+  </div>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full bg-sky-500" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-sky-400" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-sky-300" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-sky-200" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-sky-100" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
     </div>
   </body>
 </html>
