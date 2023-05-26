@@ -154,9 +154,7 @@
               </p>
               <div class="p-6">
                 <form class="flex flex-col gap-6">
-                  <div
-                    class="border-2 h-fit w-fit border-black h-fit rounded-md"
-                  >
+                  <div class="border-2 h-fit w-fit border-black rounded-md">
                     <ul class="flex flex-row">
                       <li class="p-2">
                         <ul class="flex text-start flex-col">
@@ -291,41 +289,46 @@
       </h1>
 
       <!-- caurasel -->
-      <div class="slideshow-container p-8">
+      <div class="slideshow-container pt-8 pb-8">
         <div class="mySlides fade">
-          <div class="flex flex-row gap-6 place-content-center">
-            <div class="card bg-white rounded-xl shadow-lg p-4">First card</div>
-            <div class="card bg-white rounded-xl shadow-lg p-4">First card</div>
-            <div class="card bg-white rounded-xl shadow-lg p-4">First card</div>
-            <div class="card bg-white rounded-xl shadow-lg p-4">First card</div>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="flex flex-row gap-6 place-content-center">
-            <div class="card bg-white rounded-xl shadow-lg p-4">
-              second card
+          <div
+            class="grid flex-row gap-6 place-content-center sm:grid sm:grid-flow-col sm:grid-rows-4 md:flex lg:flex xl:flex"
+          >
+            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
+              First card
             </div>
-            <div class="card bg-white rounded-xl shadow-lg p-4">
-              second card
-            </div>
-            <div class="card bg-white rounded-xl shadow-lg p-4">
-              second card
+            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
+              First card
             </div>
           </div>
         </div>
 
         <div class="mySlides fade">
           <div class="flex flex-row gap-6 place-content-center">
-            <div class="card bg-white rounded-xl shadow-lg p-4">Third card</div>
-            <div class="card bg-white rounded-xl shadow-lg p-4">Third card</div>
-            <div class="card bg-white rounded-xl shadow-lg p-4">Third card</div>
+            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
+              second card
+            </div>
+            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
+              second card
+            </div>
           </div>
         </div>
-        <div class=""></div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="mySlides fade">
+          <div class="flex flex-row gap-6 place-content-center">
+            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
+              Third card
+            </div>
+            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
+              Third card
+            </div>
+          </div>
+        </div>
+
+        <a class="prev bg-white text-black" onclick="plusSlides(-1)"
+          >&#10094;</a
+        >
+        <a class="next bg-white text-black" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br />
 
@@ -334,6 +337,111 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
+    </div>
+
+    <!-- fourth part of main body -->
+    <div class="curved-down-border">
+      <div class="grid place-content-center p-8">
+        <h1
+          class="p-3 w-fit ml-auto mr-auto text-center bg-sky-100 text-blue-900 font-md rounded-full"
+        >
+          Popular Countries
+        </h1>
+        <h2 class="text-center text-blue-900 font-bold text-6xl">
+          Where you can send <br />
+          money
+        </h2>
+      </div>
+      <div
+        class="grid place-content-center gap-8 grid-flow-col grid-rows-2 p-6"
+      >
+        <div
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+        >
+          <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
+          <h3 class="font-md">The Philippines</h3>
+          <p class="text-2xl">&gt;</p>
+        </div>
+        <div
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+        >
+          <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
+          <h3 class="font-md">Kenya</h3>
+          <p class="text-2xl">&gt;</p>
+        </div>
+        <div
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+        >
+          <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
+          <h3 class="font-md">Morocco</h3>
+          <p class="text-2xl">&gt;</p>
+        </div>
+        <div
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+        >
+          <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
+          <h3 class="font-md">Ghana</h3>
+          <p class="text-2xl">&gt;</p>
+        </div>
+        <div
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+        >
+          <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
+          <h3 class="font-md">Senegal</h3>
+          <p class="text-2xl">&gt;</p>
+        </div>
+        <div
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+        >
+          <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
+          <h3 class="font-md">Haiti</h3>
+          <p class="text-2xl">&gt;</p>
+        </div>
+      </div>
+      <div class="grid place-content-center p-8">
+        <button
+          class="rounded-full w-fit h-fit p-4 bg-blue-500 text-white font-black"
+        >
+          View All Countries
+        </button>
+      </div>
+    </div>
+
+    <!-- fifth part of the body ~~OUR STORY~~ -->
+    <!-- TODO!: add three line icon or image here -->
+    <div class="h-20"></div>
+
+    <div
+      class="p-12 mt-10 flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-6 place-content-between"
+    >
+      <div class="p-20">
+        <h1 class="text-4xl text-blue-900 font-bold">Our Story</h1>
+        <p class="pt-6 text-sky-700 font-md pb-6">
+          At Sendwave, we're on a mission: to make sure your money gets to your
+          friends and family,<br />
+          as safely and effortlessly as possible.
+        </p>
+        <button
+          class="p-2 text-white bg-blue-700 text-lg rounded-full font-bold"
+        >
+          Our Story
+        </button>
+      </div>
+
+      <div class="bg-yellow-300 rounded-md">
+        <img
+          class="-mt-40"
+          loading="lazy"
+          src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63aff6b2493ff724a471c770_digital-service2%201.png"
+        />
+      </div>
+    </div>
+
+    <!-- sixth part of the body -->
+    <div class="grid grid-cols-3 place-content">
+      <div class="place-content-start h-fit w-fit p-2">hi too</div>
+      <div class="place-content-center h-fit w-fit bg-sky-300 p-6">hi</div>
+      <div class="place-content-end h-fit w-fit p-2">Hi three</div>
     </div>
     <script src="index.js"></script>
   </body>
