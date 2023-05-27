@@ -62,10 +62,10 @@
 
     <!-- first part of main body -->
     <div
-      class="bg-yellow-300 w-full p-8 curved-down-border place-content-center sm:place-content-center lg:place-content-auto md:place-content-auto xl:place-content-auto"
+      class="bg-yellow-300 w-full p-8 curved-down-border place-content-center sm:place-content-start lg:place-content-auto md:place-content-auto xl:place-content-auto"
     >
       <div
-        class="grid grid-rows-2 grid-flow-col sm:grid-rows-2 md:grid-rows-1 lg:grid-rows-1 xl:grid-rows-1"
+        class="grid grid-rows-2 grid-flow-col sm:grid-rows-2 md:grid-rows-1 lg:grid-rows-1 xl:grid-rows-1 gap-6"
       >
         <!-- first section -->
         <div
@@ -138,9 +138,11 @@
 
         <!-- second section -->
         <div
-          class="text-center w-fit container mx-auto mt-2 sm:mt-2 md:mt-8 lg:mt-8 xl:mt-8"
+          class="w-1/2 sm:w-1/2 md:w-fit lg:w-fit xl:w-fit mt-2 sm:mt-2 md:mt-8 lg:mt-8 xl:mt-8"
         >
-          <div class="card bg-white rounded-md drop-shadow-xl">
+          <div
+            class="card bg-white text-center w-fit rounded-md drop-shadow-xl"
+          >
             <div class="bg-blue-900 rounded-t-md">
               <h1 class="text-white font-bold text-2xl p-4">Exchange Rate</h1>
             </div>
@@ -152,9 +154,9 @@
                 We make sure more of your money <br />goes to those you love,
                 not to high service fees.
               </p>
-              <div class="p-6">
+              <div class="p-3 sm:p-3 md:p-6 lg:p-6 xl:p-6">
                 <form class="flex flex-col gap-6">
-                  <div class="border-2 h-fit w-fit border-black rounded-md">
+                  <div class="border-2 h-fit border-black rounded-md">
                     <ul class="flex flex-row">
                       <li class="p-2">
                         <ul class="flex text-start flex-col">
@@ -347,51 +349,52 @@
         >
           Popular Countries
         </h1>
-        <h2 class="text-center text-blue-900 font-bold text-6xl">
-          Where you can send <br />
-          money
+        <h2
+          class="text-center text-blue-900 font-bold md:text-6xl lg:text-6xl xl:text-6xl sm:text-4xl text-4xl p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8"
+        >
+          Where you can send money
         </h2>
       </div>
       <div
-        class="grid place-content-center gap-8 grid-flow-col grid-rows-2 p-6"
+        class="grid place-content-center gap-8 grid-flow-col grid-rows-6 p-6 sm:grid-rows-6 md:grid-rows-2 lg:grid-rows-2"
       >
         <div
-          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
           <h3 class="font-md">The Philippines</h3>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
-          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
           <h3 class="font-md">Kenya</h3>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
-          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
           <h3 class="font-md">Morocco</h3>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
-          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
           <h3 class="font-md">Ghana</h3>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
-          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
           <h3 class="font-md">Senegal</h3>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
-          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-fit flex flex-row"
+          class="card shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
           <h3 class="font-md">Haiti</h3>
@@ -412,25 +415,28 @@
     <div class="h-20"></div>
 
     <div
-      class="p-12 mt-10 flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-6 place-content-between"
+      class="p-2 sm:p-2 md:p-12 lg:p-12 xl:p-12 mt-2 sm:mt-2 md:mt-10 lg:mt-10 xl:mt-10 flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-6 place-content-between"
     >
-      <div class="p-20">
+      <div
+        class="p-9 sm:p-9 md:p-20 lg:p-20 xl:p-20 sm:text-center text-center lg:text-start md:text-start xl:text-start"
+      >
         <h1 class="text-4xl text-blue-900 font-bold">Our Story</h1>
-        <p class="pt-6 text-sky-700 font-md pb-6">
-          At Sendwave, we're on a mission: to make sure <br />
-          your money gets to your friends and family,<br />
-          as safely and effortlessly as possible.
+        <p class="pt-6 text-sky-700 font-xl pb-6">
+          At Sendwave, we're on a mission: to make sure your money gets to your
+          friends and family, as safely and effortlessly as possible.
         </p>
         <button
-          class="p-2 text-white bg-blue-700 text-lg rounded-full font-bold"
+          class="p-2 text-white bg-blue-700 text-lg rounded-full font-bold shadow-md"
         >
           Our Story
         </button>
       </div>
 
-      <div class="bg-yellow-300 rounded-md">
+      <div
+        class="bg-yellow-300 rounded-md mt-12 sm:mt-12 md:mt-3 lg:mt-3 xl:mt-3"
+      >
         <img
-          class="-mt-40"
+          class="-mt-20 sm:-mt-20 md:-mt-40 lg:-mt-40 xl:-mt-40"
           loading="lazy"
           src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63aff6b2493ff724a471c770_digital-service2%201.png"
         />
@@ -438,7 +444,10 @@
     </div>
 
     <!-- sixth part of the body -->
-    <div class="grid grid-cols-1 place-content p-6">
+    <!-- large screen view only -->
+    <div
+      class="hidden sm:hidden xl:grid lg:grid md:grid grid-cols-1 place-content p-6"
+    >
       <div class="place-content-start h-fit w-fit p-2">
         <img
           class="rounded-md"
@@ -447,7 +456,7 @@
         />
       </div>
       <div
-        class="place-content-center text-center h-fit w-fit bg-sky-200 p-8 ml-auto mr-auto rounded-full"
+        class="place-content-center text-center h-fit w-fit bg-sky-200 p-2 sm:p-2 lg:p-8 xl:p-8 ml-auto mr-auto rounded-full"
       >
         <div class="place-content-center pl-16 pr-16">
           <h2 class="text-2xl font-md text-blue-700">
@@ -476,22 +485,70 @@
         />
       </div>
     </div>
+    <!-- small screen view only -->
+    <div
+      class="flex text-center flex-col sm:flex md:hidden lg:hidden xl:hidden p-4"
+    >
+      <div>
+        <h1 class="p-2 font-bold text-xl text-blue-900">
+          Get started sending money to your loved ones
+        </h1>
+        <p class="text-slate-500 text-md">
+          Simply download the app, link your debit card, verify youridentity and
+          quickly transfer money to your friends and loved ones. Seriously, it's
+          that simple.
+        </p>
+      </div>
+      <div
+        class="grid p-2 sm:p-2 md:p-5 lg:p-5 w-fit xl:p-5 grid-rows-1 grid-flow-col sm:grid md:hidden lg:hidden"
+      >
+        <button class="w-40">
+          <a href=""
+            ><img
+              loading="lazy"
+              src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b014bf1504f90367ee5948_image%2029.png"
+              alt="apple store"
+            />
+          </a>
+        </button>
+        <button class="w-40">
+          <a href=""
+            ><img
+              loading="lazy"
+              src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b0151183088cb7c45cfe48_image%2028.png"
+              alt="google playstore"
+          /></a>
+        </button>
+      </div>
+      <div class="h-fit w-fit ml-auto mr-auto">
+        <img
+          class="rounded-md"
+          loading="lazy"
+          src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b010a5359373e2e13f2fb3_Rectangle%20151.jpg"
+        />
+      </div>
+    </div>
+    <!-- end of sixth part of the body -->
 
     <!-- footer -->
     <div class="bg-blue-900 text-white">
-      <div class="grid grid-rows-1 grid-flow-col gap-5 p-8">
+      <div
+        class="grid grid-rows-3 grid-flow-col sm:gap-1 gap-1 md:gap-5 lg:gap-5 xl:gap-5 lg:p-8 p-2 sm:p-2 xl:p-8 sm:grid-rows-3 lg:grid-rows-1 xl:grid-rows-1"
+      >
         <div>
           <img
             loading="lazy"
             src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b019b659086b39a1633adc_Sendwave_Horizontal_Negative_RGB%202.png"
           />
-          <p class="p-4">
+          <p class="p-2 sm:p-2 lg:p-4 xl:p-4">
             © Chime Inc. NMLSChime Inc. DBA Sendwave is <br />
             licensed as a Money Transfer Company licensed by<br />
             the New York Department of Financial Services.
           </p>
         </div>
-        <div class="flex flex-row gap-4">
+        <div
+          class="flex flex-col gap-4 sm:flex-col md:flex-row lg:flex-row xl:flex-row"
+        >
           <div>
             <h1 class="text-xl font-bold pb-6">Company</h1>
             <ul class="flex flex-col gap-3">
@@ -526,8 +583,12 @@
       </div>
       <hr />
       <div class="flex flex-row place-content-between p-6">
-        <div>Copyright © 2022 Sendwave | All Rights Reserved.</div>
-        <div>Social media Icons</div>
+        <div class="sm:text-sm text-sm lg:text-base xl:text-base md:text-base">
+          Copyright © 2022 Sendwave | All Rights Reserved.
+        </div>
+        <div class="sm:text-sm text-sm lg:text-base xl:text-base md:text-base">
+          Social media Icons
+        </div>
       </div>
     </div>
 
