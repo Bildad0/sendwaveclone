@@ -62,19 +62,19 @@
 
     <!-- first part of main body -->
     <div
-      class="bg-yellow-300 w-full p-8 curved-down-border place-content-center sm:place-content-start lg:place-content-auto md:place-content-auto xl:place-content-auto"
+      class="bg-yellow-300 min-w-screen p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 curved-down-border place-contenstart sm:place-content-start lg:place-content-auto md:place-content-auto xl:place-content-auto"
     >
       <div
         class="grid grid-rows-2 grid-flow-col sm:grid-rows-2 md:grid-rows-1 lg:grid-rows-1 xl:grid-rows-1 gap-6"
       >
         <!-- first section -->
         <div
-          class="text-center sm:text-center md:text-start lg:text-start xl:text-start pl-3"
+          class="text-center sm:text-center md:text-start lg:text-start xl:text-start p-1 sm:p-1 md:pl-3 lg:pl-3"
         >
           <h1
-            class="font-bold pb-4 text-xl decoration-8 text-blue-900 white-space-4 sm:text-2xl md:text-6xl lg:text-6xl xl:text-6xl"
+            class="font-bold p-4 text-4xl decoration-8 text-blue-900 white-space-4 sm:text-4xl md:text-6xl lg:text-6xl xl:text-6xl"
           >
-            Send Money <br />with love
+            Send Money with love
           </h1>
 
           <!-- large screen content -->
@@ -88,7 +88,7 @@
 
           <!-- mobile screens -->
           <div
-            class="grid p-2 sm:p-2 md:p-5 lg:p-5 w-fit xl:p-5 grid-rows-1 grid-flow-col sm:grid md:hidden lg:hidden"
+            class="grid p-2 sm:p-2 md:p-5 lg:p-5 w-fit xl:p-5 grid-rows-1 place-content-center ml-auto mr-auto grid-flow-col sm:grid md:hidden lg:hidden"
           >
             <button class="w-40">
               <a href=""
@@ -108,16 +108,16 @@
               /></a>
             </button>
           </div>
-          <div class="flex flex-row pl-4 pt-8">
+          <div class="flex flex-row p-8">
             <!-- 1 -->
-            <div class="">
+            <div class="ml-auto mr-auto sm:ml-auto sm:mr-auto md:m-0">
               <img
                 class=""
                 src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63abee8afdf77f50257b7844_image%2010.svg"
                 loading="lazy"
                 alt="rating"
               />
-              <div><h4 class="text-black font-bold">Excelent 4.6</h4></div>
+              <h4 class="text-black font-bold p-4">Excelent 4.6</h4>
               <div class="">
                 <img
                   loading="lazy"
@@ -138,15 +138,15 @@
 
         <!-- second section -->
         <div
-          class="w-1/2 sm:w-1/2 md:w-fit lg:w-fit xl:w-fit mt-2 sm:mt-2 md:mt-8 lg:mt-8 xl:mt-8"
+          class="w-fit sm:w-fit md:w-fit lg:w-fit xl:w-fit mt-2 sm:mt-2 md:mt-8 lg:mt-8 xl:mt-8"
         >
           <div
-            class="card bg-white text-center w-fit rounded-md drop-shadow-xl"
+            class="card bg-white text-center w-84 sm:w-84 md:w-fit lg:w-fit xl:w-fit rounded-md drop-shadow-xl"
           >
             <div class="bg-blue-900 rounded-t-md">
               <h1 class="text-white font-bold text-2xl p-4">Exchange Rate</h1>
             </div>
-            <div class="p-3">
+            <div class="p-1 sm:p-1 md:p-3 lg:p-3 xl:p-3">
               <h3 class="font-bold text-xl pb-3">
                 Send money to your loved ones
               </h3>
@@ -181,7 +181,7 @@
                   </div>
 
                   <div
-                    class="border-2 h-fit w-fit border-black h-fit rounded-md"
+                    class="border-2 h-fit w-fit border-black h-fit rounded-md mb-6"
                   >
                     <ul class="flex flex-row">
                       <li class="p-2">
@@ -206,7 +206,9 @@
                     </ul>
                   </div>
                   <div>
-                    <h1 class="text-start">
+                    <h1
+                      class="hidden sm:hidden md:flex lg:flex xl:flex text-start"
+                    >
                       <span class="text-xl font-bold text-blue-900"
                         >Today's rate:</span
                       >
@@ -291,46 +293,84 @@
       </h1>
 
       <!-- caurasel -->
-      <div class="slideshow-container pt-8 pb-8">
-        <div class="mySlides fade">
+      <div class="slideshow-container pt-8 pb-8 flex">
+        <div class="mySlides fade ml-auto mr-auto">
           <div
-            class="grid flex-row gap-6 place-content-center sm:grid sm:grid-flow-col sm:grid-rows-4 md:flex lg:flex xl:flex"
+            class="card bg-white rounded-xl shadow-lg p-4 h-fit w-fit text-center"
           >
-            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
-              First card
-            </div>
-            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
-              First card
-            </div>
+            <img
+              src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg"
+              alt="Profile picture"
+              class="rounded-full ml-auto mr-auto"
+              width="30%"
+              height="30%"
+            />
+            <h1 class="p-4 text-2xl font-md text-blue-900">Hydee Pichai</h1>
+            <h3 class="p-2 font-md text-slate-800">The Philippines</h3>
+            <h5>Ratings</h5>
+            <p class="text-slate-500 p-4 font-xl">
+              Sendwave is so fast and convenient to use when I want to send
+              money to the Philippines. I use them because they have no fees and
+              their rates are amazing.
+            </p>
           </div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="flex flex-row gap-6 place-content-center">
-            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
-              second card
-            </div>
-            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
-              second card
-            </div>
+        <div class="mySlides fade ml-auto mr-auto">
+          <div
+            class="card bg-white rounded-xl shadow-lg p-4 h-fit w-fit text-center"
+          >
+            <img
+              src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg"
+              alt="Profile picture"
+              class="rounded-full ml-auto mr-auto"
+              width="30%"
+              height="30%"
+            />
+            <h1 class="p-4 text-2xl font-md text-blue-900">Madame Sarr</h1>
+            <h3 class="p-2 font-md text-slate-800">Senegal</h3>
+            <h5>Ratings</h5>
+            <p class="text-slate-500 p-4 font-xl">
+              I knew Sendwave through my brother-in-law. It is simple to use,
+              fast, reliable and not at all expensive. I am really very
+              satisfied with their service. I highly recommend it.
+            </p>
           </div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="flex flex-row gap-6 place-content-center">
-            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
-              Third card
-            </div>
-            <div class="card bg-white rounded-xl shadow-lg p-4 h-60">
-              Third card
-            </div>
+        <div class="mySlides fade ml-auto mr-auto">
+          <div
+            class="card bg-white rounded-xl shadow-lg p-4 h-fit w-fit text-center"
+          >
+            <img
+              src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg"
+              alt="Profile picture"
+              class="rounded-full ml-auto mr-auto"
+              width="30%"
+              height="30%"
+            />
+            <h1 class="p-4 text-2xl font-md text-blue-900">
+              Moise Lena Jean Louis
+            </h1>
+            <h3 class="p-2 font-md text-slate-800">Haiti</h3>
+            <h5>Ratings</h5>
+            <p class="text-slate-500 p-4 font-xl">
+              There are so many things I love about Sendwave: It is easy, fast
+              and there is no fee to send money..
+            </p>
           </div>
         </div>
 
-        <a class="prev bg-white text-black" onclick="plusSlides(-1)"
+        <a
+          class="prev bg-white text-black place-content-start mt-20 p-2 mb-auto hidden sm:hidden md:flex lg:flex xl:flex"
+          onclick="plusSlides(-1)"
           >&#10094;</a
         >
-        <a class="next bg-white text-black" onclick="plusSlides(1)">&#10095;</a>
+        <a
+          class="next bg-white text-black place-content-end mt-20 p-2 mb-auto hidden sm:hidden md:flex lg:flex xl:flex"
+          onclick="plusSlides(1)"
+          >&#10095;</a
+        >
       </div>
       <br />
 
@@ -338,6 +378,7 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </div>
 
@@ -401,7 +442,7 @@
           <p class="text-2xl">&gt;</p>
         </div>
       </div>
-      <div class="grid place-content-center p-8">
+      <div class="grid place-content-center p-2">
         <button
           class="rounded-full w-fit h-fit p-4 bg-blue-500 text-white font-black"
         >
@@ -421,9 +462,9 @@
         class="p-9 sm:p-9 md:p-20 lg:p-20 xl:p-20 sm:text-center text-center lg:text-start md:text-start xl:text-start"
       >
         <h1 class="text-4xl text-blue-900 font-bold">Our Story</h1>
-        <p class="pt-6 text-sky-700 font-xl pb-6">
-          At Sendwave, we're on a mission: to make sure your money gets to your
-          friends and family, as safely and effortlessly as possible.
+        <p class="pt-2 text-sky-700 font-xl pb-6">
+          At Sendwave, we're on a mission: to make sure your money gets <br />
+          to your friends and family, as safely and effortlessly as possible.
         </p>
         <button
           class="p-2 text-white bg-blue-700 text-lg rounded-full font-bold shadow-md"
@@ -522,7 +563,7 @@
       </div>
       <div class="h-fit w-fit ml-auto mr-auto">
         <img
-          class="rounded-md"
+          class="rounded-md w-80 h-80 sm:w-80 md:w-fit lg:w-fit xl:w-fit"
           loading="lazy"
           src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b010a5359373e2e13f2fb3_Rectangle%20151.jpg"
         />
@@ -533,9 +574,9 @@
     <!-- footer -->
     <div class="bg-blue-900 text-white">
       <div
-        class="grid grid-rows-3 grid-flow-col sm:gap-1 gap-1 md:gap-5 lg:gap-5 xl:gap-5 lg:p-8 p-2 sm:p-2 xl:p-8 sm:grid-rows-3 lg:grid-rows-1 xl:grid-rows-1"
+        class="grid grid-rows-3 grid-flow-col sm:gap-0 gap-0 md:gap-5 lg:gap-5 xl:gap-5 lg:p-8 p-4 sm:p-4 xl:p-8 sm:grid-rows-3 lg:grid-rows-1 xl:grid-rows-1"
       >
-        <div>
+        <div class="h-fit">
           <img
             loading="lazy"
             src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b019b659086b39a1633adc_Sendwave_Horizontal_Negative_RGB%202.png"
