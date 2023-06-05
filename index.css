@@ -1,10 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700;1,900&display=swap");
+
 .curved-down-border {
   position: "relative";
 }
-
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", cursive;
+}
 .curved-down-border:after {
   width: 100%;
-  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   background: #fff;
   top: 0;
   position: absolute;
@@ -25,13 +38,15 @@
   cursor: pointer;
   position: absolute;
   width: auto;
-
   color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 10px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+}
+
+.courasel-dots {
+  text-align: center;
 }
 
 .next {

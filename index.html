@@ -117,7 +117,7 @@
                 loading="lazy"
                 alt="rating"
               />
-              <h4 class="text-black font-bold p-4">Excelent 4.6</h4>
+              <p class="text-black font-bold p-4">Excelent 4.6</p>
               <div class="">
                 <img
                   loading="lazy"
@@ -128,10 +128,10 @@
             </div>
             <!-- 2 -->
             <div class="p-4 hidden sm:hidden md:flex lg:flex xl:flex">
-              <h1>
+              <p>
                 Scan this QR code with your
                 <br />phone to download our app!
-              </h1>
+              </p>
             </div>
           </div>
         </div>
@@ -171,7 +171,7 @@
                         </ul>
                       </li>
                       <li class="p-2 bg-blue-900 text-white">
-                        <select class="bg-blue-900">
+                        <select class="bg-blue-900" title="Country">
                           <option>Kenya</option>
                           <option>Tanzania</option>
                           <option>Uganda</option>
@@ -197,7 +197,7 @@
                         </ul>
                       </li>
                       <li class="p-2 bg-blue-900 text-white">
-                        <select class="bg-blue-900">
+                        <select class="bg-blue-900" title="country">
                           <option>Kenya</option>
                           <option>Tanzania</option>
                           <option>Uganda</option>
@@ -206,14 +206,14 @@
                     </ul>
                   </div>
                   <div>
-                    <h1
+                    <p
                       class="hidden sm:hidden md:flex lg:flex xl:flex text-start"
                     >
                       <span class="text-xl font-bold text-blue-900"
                         >Today's rate:</span
                       >
                       Rate
-                    </h1>
+                    </p>
                   </div>
                 </form>
               </div>
@@ -294,10 +294,10 @@
 
       <!-- caurasel -->
       <div class="slideshow-container pt-8 pb-8 flex">
-        <div class="mySlides fade ml-auto mr-auto">
-          <div
-            class="card bg-white rounded-xl shadow-lg p-4 h-fit w-fit text-center"
-          >
+        <div
+          class="mySlides fade ml-auto mr-auto w-fit sm:w-fit md:w-1/2 lg:w-1/2 xl:w-1/2"
+        >
+          <div class="card bg-white rounded-xl shadow-lg p-4 h-fit text-center">
             <img
               src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg"
               alt="Profile picture"
@@ -316,7 +316,7 @@
           </div>
         </div>
 
-        <div class="mySlides fade ml-auto mr-auto">
+        <div class="mySlides fade ml-auto mr-auto w-1/2">
           <div
             class="card bg-white rounded-xl shadow-lg p-4 h-fit w-fit text-center"
           >
@@ -338,7 +338,7 @@
           </div>
         </div>
 
-        <div class="mySlides fade ml-auto mr-auto">
+        <div class="mySlides fade ml-auto mr-auto w-1/2">
           <div
             class="card bg-white rounded-xl shadow-lg p-4 h-fit w-fit text-center"
           >
@@ -362,19 +362,19 @@
         </div>
 
         <a
-          class="prev bg-white text-black place-content-start mt-20 p-2 mb-auto hidden sm:hidden md:flex lg:flex xl:flex"
+          class="prev bg-transparent border-2 border-yellow-300 hover:text-yellow-300 text-black place-content-start mt-20 p-3 mb-auto hidden sm:hidden md:flex lg:flex xl:flex rounded-full"
           onclick="plusSlides(-1)"
           >&#10094;</a
         >
         <a
-          class="next bg-white text-black place-content-end mt-20 p-2 mb-auto hidden sm:hidden md:flex lg:flex xl:flex"
+          class="next bg-transparent border-2 border-yellow-300 hover:text-yellow-300 text-black place-content-end mt-20 p-3 mb-auto hidden sm:hidden md:flex lg:flex xl:flex rounded-full"
           onclick="plusSlides(1)"
           >&#10095;</a
         >
       </div>
       <br />
 
-      <div style="text-align: center">
+      <div class="courasel-dots">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
@@ -403,42 +403,42 @@
           class="card shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex place-content-between flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
-          <h3 class="font-md">The Philippines</h3>
+          <p class="font-md">The Philippines</p>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
           class="card place-content-between shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
-          <h3 class="font-md">Kenya</h3>
+          <p class="font-md">Kenya</p>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
           class="card place-content-between shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
-          <h3 class="font-md">Morocco</h3>
+          <p class="font-md">Morocco</p>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
           class="card place-content-between shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
-          <h3 class="font-md">Ghana</h3>
+          <p class="font-md">Ghana</p>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
           class="card place-content-between shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
-          <h3 class="font-md">Senegal</h3>
+          <p class="font-md">Senegal</p>
           <p class="text-2xl">&gt;</p>
         </div>
         <div
           class="card place-content-between shadow-lg gap-5 h-fit p-6 rounded-md w-70 flex flex-row"
         >
           <img src="" alt="flag" class="p-1 bg-amber-100 rounded-md" />
-          <h3 class="font-md">Haiti</h3>
+          <p class="font-md">Haiti</p>
           <p class="text-2xl">&gt;</p>
         </div>
       </div>
@@ -477,6 +477,7 @@
         class="bg-yellow-300 rounded-md mt-12 sm:mt-12 md:mt-3 lg:mt-3 xl:mt-3"
       >
         <img
+          alt=""
           class="-mt-20 sm:-mt-20 md:-mt-40 lg:-mt-40 xl:-mt-40"
           loading="lazy"
           src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63aff6b2493ff724a471c770_digital-service2%201.png"
@@ -489,15 +490,16 @@
     <div
       class="hidden sm:hidden xl:grid lg:grid md:grid grid-cols-1 place-content p-6"
     >
-      <div class="place-content-start h-fit w-fit p-2">
+      <div class="place-content-start h-fit w-fit p-2 z-10 ml-20">
         <img
+          alt=""
           class="rounded-md"
           loading="lazy"
           src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b010a5359373e2e13f2fb3_Rectangle%20151.jpg"
         />
       </div>
       <div
-        class="place-content-center text-center h-fit w-fit bg-sky-200 p-2 sm:p-2 lg:p-8 xl:p-8 ml-auto mr-auto rounded-full"
+        class="place-content-center -mt-6 text-center w-1/2 bg-sky-200 p-2 sm:p-2 lg:p-8 xl:p-8 ml-auto mr-auto rounded-xl"
       >
         <div class="place-content-center pl-16 pr-16">
           <h2 class="text-2xl font-md text-blue-700">
@@ -514,12 +516,13 @@
         <div class="flex flex place-content-center row gap-6">
           <div>Qr Code</div>
           <div>
-            <h4>Scan this QR code with your phone to download our app</h4>
+            <p>Scan this QR code with your phone to download our app</p>
           </div>
         </div>
       </div>
       <div class="place-content-baseline h-fit w-fit p-2">
         <img
+          alt=""
           class="rounded-md"
           loading="lazy"
           src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b010a5359373e2e13f2fb3_Rectangle%20151.jpg"
@@ -563,6 +566,7 @@
       </div>
       <div class="h-fit w-fit ml-auto mr-auto">
         <img
+          alt=""
           class="rounded-md w-80 h-80 sm:w-80 md:w-fit lg:w-fit xl:w-fit"
           loading="lazy"
           src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b010a5359373e2e13f2fb3_Rectangle%20151.jpg"
@@ -578,6 +582,7 @@
       >
         <div class="h-fit">
           <img
+            alt="logo"
             loading="lazy"
             src="https://assets-global.website-files.com/63aacea7fa25cbbb9eb22052/63b019b659086b39a1633adc_Sendwave_Horizontal_Negative_RGB%202.png"
           />
